@@ -5,8 +5,9 @@ class Building {
         this.baseCps = baseCps / (1000 / tickRate);
         this.baseCost = baseCost;
         this.cost = baseCost;
-        this.buttonId = "buy" + buildingName;
+        this.buttonId = "buy" + buildingName.replace(/\s/g, "");
         this.amountOwned = 0;
+        this.doubleUpgrade = 1;
         this.cps = 0;
         this.visible = false; // !!!!Change this to false!!!!!!
     }
@@ -14,8 +15,12 @@ class Building {
     purchase() {
         score -= this.cost;
         this.amountOwned++;
-        this.cps = this.baseCps * this.amountOwned;
+        this.applyDoubleUpgrade();
         this.cost = Math.ceil(this.cost * 1.15 );
+    }
+
+    applyDoubleUpgrade() {
+        this.cps = this.baseCps * this.amountOwned * this.doubleUpgrade;
     }
     buttonState() {
         if (!this.visible) {
@@ -32,8 +37,8 @@ class Building {
         }
 
         document.getElementById(this.buttonId).innerHTML = "Buy " + this.buildingName + " (Cost: score " + Math.ceil(this.cost).toLocaleString() + 
-        ") <br> Adds " + (this.baseCps * (1000 / tickRate)).toLocaleString() + " Per Second <br> [Owned: " + this.amountOwned + "]";
+        ") <br> Adds " + (this.baseCps * this.doubleUpgrade * (1000 / tickRate)).toLocaleString() + " Per Second <br> [Owned: " + this.amountOwned + "]";
     }
 }
 
-//  !this.visible same as this.visible = false
+//  !this.visible same as this.visible = false          this.doubleUpgrade
