@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="src/building.js"></script>
     <script src="src/upgrade.js"></script>
     <script src="src/upSupa.js"></script>
     <script src="src/main.js"></script>
     <title>Vtuber Clicker</title>
-    <style>
-
-    </style>
 </head>
 <body>
+    <header>
     <h1>Vtuber Clicker</h1>
     <h2>You need to survive as a human working as a vtuber.</h2>
-    <h3>Score: <span class="score" id="score">0</span></h3>
-    <button type="button" onclick="scorePlusPlus()">Click Me!</button>
-    <h4>Equipments</h4>
-    <button type="button" id="buyJuicer" onclick="juicer.purchase()">Buy Autoclicker</button>
-    <button type="button" id="buyMouse" onclick="mouse.purchase()">Open a Merch store</button>
-    <button type="button" id="buyCollab" onclick="collab.purchase()">Collab with other vtubers</button>
-    <button type="button" id="buyConcert" onclick="concert.purchase()">Host concert</button>
+    </header>
 
-    <!--Add more building/equipments bottons here-->
-
-
-    <h4>Upgrades:</h4>
-    <button type="button" id="buySuperChat" onclick="upSupa.purchase()">Buy Supa</button>
-    
+    <div class="outer">
+        <div class="click">
+             <h3>Score: <span class="score" id="score">0</span></h3>
+             <button type="button" onclick="scorePlusPlus()">Click Me!</button>
+        </div>
+        <div class="store">
+            <div class="equipments">
+                <div class="store-title">
+                    <h4>Equipments</h4>
+                </div>
+                    <button class="button" type="button" id="buyJuicer" onclick="juicer.purchase()">Buy Autoclicker</button>
+                    <button class="button" type="button" id="buyMouse" onclick="mouse.purchase()">Open a Merch store</button>
+                    <button class="button" type="button" id="buyCollab" onclick="collab.purchase()">Collab with other vtubers</button>
+                    <button class="button" type="button" id="buyConcert" onclick="concert.purchase()">Host concert</button>
+            </div>
+                    <!--Add more building/equipments bottons here-->
+            <div class="upgrades">
+                <div class="store-title">
+                    <h4>Upgrades:</h4>
+                </div>
+                    <button class="button" type="button" id="buySuperChat" onclick="upSupa.purchase()">Buy Supa
+                    </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 <!--<img src="image/wah.jpg" alt="a330-300" height="320" width="500" >
