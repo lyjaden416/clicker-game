@@ -3,13 +3,15 @@ body {
     color: red;
 }
 
-/* .ceci {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 0.5;
-} */
+.ceci {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+} 
 
 header {
     text-align: center;
