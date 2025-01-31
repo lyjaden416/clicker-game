@@ -7,8 +7,8 @@ class UpMember extends Upgrade {
     
     purchase() {
         super.purchase();
-        clickStrength++; //can comment out
-        this.building.doubleUpgrade++;
+        clickStrength += 4; //can comment out
+        this.building.doubleUpgrade+= 4;
         this.building.applyDoubleUpgrade();
     }
 }

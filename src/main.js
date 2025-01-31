@@ -11,6 +11,7 @@ let collab = new Building('Host Collab With Others', 75, 1500);
 let concert = new Building('Concert', 250, 5000);
 
 let upSupa = new UpSupa('Super Chat', 100, redbull);
+let upMember = new UpMember('Create Memberships', 500, mouse);
 
 function scorePlusPlus() {
     score += clickStrength;
@@ -34,6 +35,7 @@ function updateButtons() {
     collab.buttonState();
     concert.buttonState();
     upSupa.buttonState();
+    upMember.buttonState();
 }
 
 function updatePage() {
