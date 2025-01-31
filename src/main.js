@@ -12,6 +12,7 @@ let concert = new Building('Concert', 250, 5000);
 
 let upSupa = new UpSupa('Super Chat', 100, redbull);
 let upMember = new UpMember('Create Memberships', 500, mouse);
+let upL3D = new UpL3D('Host A 3D Concert', 7500, concert);
 
 function scorePlusPlus() {
     score += clickStrength;
@@ -36,6 +37,7 @@ function updateButtons() {
     concert.buttonState();
     upSupa.buttonState();
     upMember.buttonState();
+    upL3D.buttonState();
 }
 
 function updatePage() {
