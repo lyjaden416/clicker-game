@@ -1,6 +1,9 @@
 body {
     margin: 0 15% 0 15%;
     color: red;
+    /*background-image: url(../image/wah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
 .ceci {
