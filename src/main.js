@@ -14,7 +14,7 @@ let detec = new Building('3D Detection Equipments', 500, 15000);
 
 let upSupa = new UpSupa('Super Chat', 100, redbull);
 let upMember = new UpMember('Create Memberships', 500, mouse);
-
+let upCharity = new UpCharity('Charity Stream', 1000, keyboard);
 let upEndur = new UpEndurance('Host An Endurance Stream', 2500, pc);
 let upSticker = new UpSticker('Texting Sticker of Vtuber', 4500, monitors);
 let upMerch = new UpMerch('Open A Merch Store', 6000, outfit);
@@ -49,6 +49,7 @@ function updateButtons() {
 
     upSupa.buttonState();
     upMember.buttonState();
+    upCharity.buttonState();
     upEndur.buttonState();
     upSticker.buttonState();
     upMerch.buttonState();
