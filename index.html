@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="src/backgrounds.js"></script>
     <script src="src/building.js"></script>
     <script src="src/upgrade.js"></script>
     <script src="src/upSupa.js"></script>
@@ -70,6 +71,13 @@
             </div>
         </div>
     </div>
-    <img src="image/ceci.jpg" alt="cecilia immergreen" class="ceci">
+    <!-- buttons -->
+    <button class="button" type="button" onclick="change()">Change to Cecilia Immergreen</button>
+    <button class="button" type="button" onclick="back()">Change to Fuwamoco</button>
+    <button class="button" type="button" onclick="change2()">Change to Biboo and Ceci</button>
+    <!-- background images -->
+    <img src="image/ceci.jpg" alt="cecilia immergreen and biboo" class="ceci" id="cecilia" onload="wagahai()">
+    <img src="image/fuwamoco.jpg" alt="fuwamoco" class="ceci" id="wah">
+    <img src="image/ceci and rock.jpg" alt="cecilia and bijou" class="ceci" id="biboo" onload="wagahai()">
 </body>
 </html>
