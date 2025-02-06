@@ -12,7 +12,7 @@ body {
     left: 0px;
     height: 100%;
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.4;
     z-index: -1;
 } 
 
@@ -45,6 +45,7 @@ div.store {
 div.store-title {
     text-align: center;
     border-bottom: 4px solid blue;
+    font-size: 21px;
 }
 
 div.equipments, 
