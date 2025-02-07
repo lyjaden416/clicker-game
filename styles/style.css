@@ -1,18 +1,19 @@
 body {
     margin: 0 15% 0 15%;
     color: red;
-    /*background-image: url(../image/wah.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;*/
+    /*background-image: url(../image/wah.jpg); */
+    background-repeat: repeat;
+    background-color: grey;
+    z-index: 0;
 }
 
 .ceci {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 12.5%;
     height: 100%;
-    width: 100%;
-    opacity: 0.4;
+    width: 75%;
+    opacity: 0.7;
     z-index: -1;
 } 
 
